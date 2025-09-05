@@ -19,8 +19,8 @@ Create a namespace called GreetingUtils. Its function declarations should be in 
   3. Copy the characters from the std::string into the new char array.
   4. Add the null terminator ‘\0‘ at the end of the char array.
   5. Return the pointer to the new heap-allocated char array.
-  
-#### main.cpp: 
+
+#### main.cpp:
 In src/main.cpp, write a program that:
 - Prompts the user to enter their name using std::cout.
 - Reads the full line of input using std::getline.
@@ -33,3 +33,8 @@ In src/main.cpp, write a program that:
 - Create a new public GitHub repository named cse3150_hw_2.
 - Add a .gitignore file to exclude your executable (greeter) and any object files (*.o).
 - Push your organized code (include/, src/)
+
+### Compilation
+To compile the program, run the following command from the root directory of the repository:
+```bash
+c++ -std=c++17 src/*.cpp -I include/ -o greeter
